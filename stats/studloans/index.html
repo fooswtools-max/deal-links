@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics &amp; Data Hub | StudLoans</title>
+    <meta name="description" content="Comprehensive statistics and data pages from StudLoans. Government data, research findings, and industry statistics.">
+    <link rel="canonical" href="https://fooswtools-max.github.io/deal-links/stats/studloans/">
+    <style>
+:root {
+    --primary: #059669;
+    --accent: #047857;
+    --bg: #ffffff;
+    --text: #1a1a2e;
+    --text-muted: #6b7280;
+    --border: #e5e7eb;
+    --table-stripe: #f9fafb;
+    --hero-bg: #f0f4ff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header { padding: 40px 0 20px; border-bottom: 1px solid var(--border); margin-bottom: 30px; }
+header .site-name { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+header .site-name:hover { text-decoration: underline; }
+h1 { font-size: 2.2rem; line-height: 1.2; margin: 15px 0 10px; color: var(--text); }
+.subtitle { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 10px; }
+.meta { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 30px; }
+.meta span { margin-right: 15px; }
+
+/* Hero stat */
+.hero-stat {
+    background: var(--hero-bg);
+    border-left: 4px solid var(--primary);
+    padding: 25px 30px;
+    margin: 30px 0;
+    border-radius: 0 8px 8px 0;
+}
+.hero-stat .number { font-size: 3rem; font-weight: 800; color: var(--primary); line-height: 1.1; }
+.hero-stat .label { font-size: 1rem; color: var(--text-muted); margin-top: 5px; }
+
+/* Key findings */
+.key-findings {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+}
+.key-findings h2 { font-size: 1.2rem; margin-bottom: 15px; }
+.key-findings ul { list-style: none; padding: 0; }
+.key-findings li { padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 0.95rem; }
+.key-findings li:last-child { border-bottom: none; }
+.key-findings li::before { content: "\2713"; color: var(--primary); font-weight: bold; margin-right: 10px; }
+
+/* Data table */
+.data-table-wrapper { overflow-x: auto; margin: 30px 0; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+}
+thead { background: var(--primary); color: white; }
+th { padding: 12px 15px; text-align: left; font-weight: 600; white-space: nowrap; }
+td { padding: 10px 15px; border-bottom: 1px solid var(--border); }
+tr:nth-child(even) { background: var(--table-stripe); }
+tr:hover { background: #eef2ff; }
+td.num { text-align: right; font-variant-numeric: tabular-nums; font-family: 'SF Mono', 'Fira Code', monospace; }
+.table-note { font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; font-style: italic; }
+
+/* Sections */
+h2 { font-size: 1.5rem; margin: 35px 0 15px; color: var(--text); border-bottom: 2px solid var(--primary); padding-bottom: 8px; }
+h3 { font-size: 1.2rem; margin: 25px 0 10px; }
+p { margin: 12px 0; font-size: 0.95rem; }
+.narrative { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 15px 20px; margin: 20px 0; border-radius: 0 6px 6px 0; font-size: 0.93rem; }
+
+/* CTA */
+.cta-box {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px 0;
+}
+.cta-box h3 { color: white; margin: 0 0 10px; font-size: 1.3rem; }
+.cta-box p { color: rgba(255,255,255,0.9); margin: 0 0 20px; }
+.cta-box a {
+    display: inline-block;
+    background: white;
+    color: var(--primary);
+    padding: 12px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+.cta-box a:hover { transform: translateY(-2px); }
+
+/* Sources */
+.sources {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+}
+.sources h3 { font-size: 1rem; margin-bottom: 10px; }
+.sources ul { list-style: none; padding: 0; }
+.sources li { padding: 4px 0; font-size: 0.85rem; color: var(--text-muted); }
+.sources a { color: var(--primary); }
+
+/* Share */
+.share-bar {
+    display: flex;
+    gap: 10px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    transition: opacity 0.2s;
+}
+.share-btn:hover { opacity: 0.85; }
+.share-btn.twitter { background: #1da1f2; }
+.share-btn.linkedin { background: #0077b5; }
+.share-btn.facebook { background: #1877f2; }
+
+/* Footer */
+footer {
+    border-top: 1px solid var(--border);
+    padding: 30px 0;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+footer a { color: var(--primary); text-decoration: none; }
+
+/* Internal links */
+.internal-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+    margin: 20px 0;
+}
+.internal-links a {
+    display: block;
+    padding: 12px 15px;
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: border-color 0.2s;
+}
+.internal-links a:hover { border-color: var(--primary); }
+
+@media (max-width: 600px) {
+    h1 { font-size: 1.6rem; }
+    .hero-stat .number { font-size: 2.2rem; }
+    .cta-box { padding: 20px; }
+}
+</style>
+</head>
+<body>
+    <header>
+        <a href="https://studloans.com" class="site-name">StudLoans</a>
+        <h1>Statistics &amp; Data Hub</h1>
+        <p class="subtitle">Comprehensive data pages from public government sources</p>
+        <p class="meta"><span>10 data pages</span> <span>Updated April 2026</span></p>
+    </header>
+
+    <div class="internal-links">
+        <a href="https://fooswtools-max.github.io/deal-links/stats/average-student-loan-debt-by-state/">Average Student Loan Debt by State (2026 Data)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/student-loan-default-rates-by-school-type/">Student Loan Default Rates by School Type (2026)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/pslf-approval-rates/">PSLF Approval Rates: Complete Statistics (2026)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/average-student-loan-payment-by-income/">Average Student Loan Payment by Income Level (2026)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/student-loan-forgiveness-statistics/">Student Loan Forgiveness Statistics: How Many Qualify? (2026)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/average-time-to-pay-off-student-loans/">Average Time to Pay Off Student Loans by Degree (2026)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/student-loan-interest-rates-history/">Student Loan Interest Rates History (2006–2026)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/income-driven-repayment-statistics/">Income-Driven Repayment Statistics (2026)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/average-student-debt-by-degree-type/">Average Student Debt by Degree Type: MBA, JD, MD, and More (2026)</a>
+        <a href="https://fooswtools-max.github.io/deal-links/stats/student-loan-refinancing-rates/">Student Loan Refinancing Rates Comparison (2026)</a>
+    </div>
+
+    <div class="cta-box">
+        <h3>Need personalized calculations?</h3>
+        <p>Use our free tools to see how these statistics apply to your situation.</p>
+        <a href="https://studloans.com/student-loan-calculator?utm_source=stats_hub&utm_medium=data_page">Try Our Student Loan Calculator</a>
+    </div>
+
+    <footer>
+        &copy; 2026 <a href="https://studloans.com">StudLoans</a>. Data from public government sources.
+    </footer>
+</body>
+</html>
