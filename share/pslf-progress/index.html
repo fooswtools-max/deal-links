@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My PSLF Progress | StudLoans</title>
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="My PSLF Progress">
+    <meta property="og:description" content="Track your progress toward Public Service Loan Forgiveness">
+    <meta property="og:url" content="https://fooswtools-max.github.io/deal-links/share/pslf-progress/">
+    <meta property="og:site_name" content="StudLoans">
+    <meta property="og:image" content="https://fooswtools-max.github.io/deal-links/og-images/og-default.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My PSLF Progress">
+    <meta name="twitter:description" content="Track your progress toward Public Service Loan Forgiveness">
+    <meta name="twitter:image" content="https://fooswtools-max.github.io/deal-links/og-images/og-default.png">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128200;</text></svg>">
+    
+    <style>
+        *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+        :root{
+            --primary:#059669;--accent:#10b981;
+            --bg:#022c22;--surface:#1e293b;--surface2:#334155;
+            --text:#f8fafc;--text-muted:#94a3b8;
+            --gradient:linear-gradient(135deg, #064e3b 0%, #059669 100%);
+            --radius:12px;--radius-lg:20px;
+        }
+        html{scroll-behavior:smooth}
+        body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+             background:var(--bg);color:var(--text);line-height:1.6;
+             min-height:100vh;-webkit-font-smoothing:antialiased}
+        .container{max-width:720px;margin:0 auto;padding:20px 16px}
+        .container-wide{max-width:960px;margin:0 auto;padding:20px 16px}
+        h1{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800;line-height:1.15;
+            background:var(--gradient);-webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;background-clip:text}
+        h2{font-size:clamp(1.3rem,3.5vw,1.8rem);font-weight:700;color:var(--text)}
+        h3{font-size:1.1rem;font-weight:600;color:var(--text)}
+        p{color:var(--text-muted);font-size:1rem}
+        a{color:var(--accent);text-decoration:none;transition:opacity .2s}
+        a:hover{opacity:.85}
+        .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;
+              background:var(--gradient);color:#fff;font-weight:700;font-size:1rem;
+              border:none;border-radius:var(--radius);cursor:pointer;
+              transition:transform .15s,box-shadow .15s;text-decoration:none}
+        .btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.3)}
+        .btn-outline{background:transparent;border:2px solid var(--primary);color:var(--primary)}
+        .btn-sm{padding:8px 16px;font-size:.875rem}
+        .card{background:var(--surface);border-radius:var(--radius-lg);padding:24px;
+               border:1px solid var(--surface2);transition:transform .2s}
+        .card:hover{transform:translateY(-3px)}
+        .badge{display:inline-block;padding:4px 12px;border-radius:999px;font-size:.75rem;
+                font-weight:600;background:rgba(59,130,246,.15);color:var(--accent)}
+        .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+        .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+        .share-bar{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+        .share-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;
+                    border-radius:var(--radius);font-weight:600;font-size:.875rem;
+                    color:#fff;text-decoration:none;transition:transform .15s}
+        .share-btn:hover{transform:translateY(-2px)}
+        .share-btn.twitter{background:#1da1f2}
+        .share-btn.facebook{background:#1877f2}
+        .share-btn.linkedin{background:#0a66c2}
+        .share-btn.whatsapp{background:#25d366}
+        .share-btn.copy{background:var(--surface2);color:var(--text)}
+        .hero{text-align:center;padding:60px 20px 40px;position:relative}
+        .result-card{background:var(--surface);border:2px solid var(--primary);
+                      border-radius:var(--radius-lg);padding:32px;text-align:center;
+                      margin:24px 0;position:relative;overflow:hidden}
+        .result-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;
+                              background:var(--gradient)}
+        .result-value{font-size:clamp(2.5rem,8vw,4rem);font-weight:900;
+                       background:var(--gradient);-webkit-background-clip:text;
+                       -webkit-text-fill-color:transparent;background-clip:text}
+        .powered-by{text-align:center;padding:16px;font-size:.8rem;color:var(--text-muted);
+                     border-top:1px solid var(--surface2);margin-top:40px}
+        .powered-by a{color:var(--accent);font-weight:600}
+        .embed-code{background:#0d1117;border:1px solid var(--surface2);border-radius:var(--radius);
+                     padding:16px;font-family:'Fira Code',monospace;font-size:.85rem;
+                     color:#e6edf3;overflow-x:auto;position:relative;margin:16px 0}
+        .copy-btn{position:absolute;top:8px;right:8px;padding:4px 10px;background:var(--surface2);
+                   color:var(--text);border:none;border-radius:6px;cursor:pointer;font-size:.75rem}
+        .leaderboard{counter-reset:rank}
+        .leaderboard-row{display:flex;align-items:center;gap:16px;padding:14px 16px;
+                          border-bottom:1px solid var(--surface2)}
+        .leaderboard-row::before{counter-increment:rank;content:counter(rank);
+                                  font-weight:800;font-size:1.2rem;color:var(--accent);
+                                  min-width:28px}
+        .stat-box{text-align:center;padding:20px}
+        .stat-box .value{font-size:2.2rem;font-weight:900;color:var(--accent)}
+        .stat-box .label{font-size:.85rem;color:var(--text-muted)}
+        .quiz-option{background:var(--surface);border:2px solid var(--surface2);
+                      border-radius:var(--radius);padding:16px;cursor:pointer;
+                      transition:all .2s;text-align:left}
+        .quiz-option:hover,.quiz-option.selected{border-color:var(--primary);
+                                                   background:rgba(37,99,235,.1)}
+        .progress-bar{background:var(--surface2);border-radius:999px;height:8px;overflow:hidden}
+        .progress-fill{height:100%;background:var(--gradient);border-radius:999px;
+                        transition:width .5s ease}
+        .video-script{background:var(--surface);border-radius:var(--radius-lg);padding:24px;
+                       margin:16px 0;border-left:4px solid var(--primary)}
+        .video-script .hook{font-weight:700;color:var(--accent);font-size:1.1rem}
+        .video-script .body{color:var(--text-muted);margin:8px 0}
+        .video-script .cta{font-weight:700;color:var(--primary)}
+        @media(max-width:600px){
+            .container,.container-wide{padding:16px 12px}
+            .hero{padding:40px 12px 24px}
+            .share-bar{flex-direction:column}
+            .share-btn{justify-content:center}
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="hero">
+            <div class="badge">StudLoans</div>
+            <h1 style="margin-top:16px">My Public Service Loan Forgiveness Progress</h1>
+            <div class="result-card">
+                <div class="result-value" id="main-result">---</div>
+                <p id="result-subtitle" style="margin-top:8px">Loading your result...</p>
+            </div>
+        </div>
+
+        <div id="share-section" style="display:none">
+            <h2 style="text-align:center;margin-bottom:16px">Share Your Result</h2>
+            <p style="text-align:center;margin-bottom:16px;color:var(--text-muted)" id="share-preview-text"></p>
+            <div class="share-bar" id="share-buttons"></div>
+        </div>
+
+        <div style="text-align:center;margin:40px 0">
+            <h2>Curious about your numbers?</h2>
+            <p style="margin:12px 0">Track your progress toward Public Service Loan Forgiveness</p>
+            <a class="btn" href="https://studloans.com/student-loan-forgiveness-for-government-employees?utm_source=share_page&utm_medium=cta&utm_campaign=share%2Fpslf-progress" style="margin-top:16px">
+                Track Your PSLF Progress &rarr;
+            </a>
+        </div>
+
+        <div class="card" style="text-align:center;margin:24px 0">
+            <h3>How does this work?</h3>
+            <p style="margin-top:8px">Use our free calculators at <a href="https://studloans.com?utm_source=share_page&utm_medium=inline&utm_campaign=share%2Fpslf-progress">StudLoans</a> to get your personalized results, then share them with friends.</p>
+        </div>
+    </div>
+
+    <script>
+    (function() {
+        const params = new URLSearchParams(window.location.search);
+        const payments_made = params.get('payments_made') || '???';
+        const payments_remaining = params.get('payments_remaining') || '???';
+        const estimated_forgiveness = params.get('estimated_forgiveness') || '???';
+
+        // Set main result (use first numeric param or first param)
+        const mainParam = params.get('payments_made') || '---';
+        const mainEl = document.getElementById('main-result');
+        if (mainParam && mainParam !== '???') {
+            // If it looks like a number, format with $ or comma
+            const num = parseFloat(mainParam.replace(/[,$]/g, ''));
+            if (!isNaN(num) && num > 100) {
+                mainEl.textContent = '$' + num.toLocaleString();
+            } else {
+                mainEl.textContent = mainParam;
+            }
+        }
+
+        // Subtitle with all params
+        const subtitle = document.getElementById('result-subtitle');
+        const paramParts = [];
+        ["payments_made", "payments_remaining", "estimated_forgiveness"].forEach(p => {
+            const v = params.get(p);
+            if (v) paramParts.push(p.replace(/_/g,' ') + ': ' + v);
+        });
+        subtitle.textContent = paramParts.join(' | ');
+
+        // Share text
+        let shareText = `I'm {payments_made}/120 payments into PSLF! ${estimated_forgiveness} to be forgiven. Track your PSLF progress:`;
+        ["payments_made", "payments_remaining", "estimated_forgiveness"].forEach(p => {
+            shareText = shareText.replace('${' + p + '}', params.get(p) || '???');
+            shareText = shareText.replace('{' + p + '}', params.get(p) || '???');
+        });
+
+        const pageUrl = window.location.href;
+        document.getElementById('share-preview-text').textContent = shareText;
+
+        // Build share buttons
+        const encText = encodeURIComponent(shareText);
+        const encUrl = encodeURIComponent(pageUrl);
+        const buttons = document.getElementById('share-buttons');
+        buttons.innerHTML = `
+            <a class="share-btn twitter" href="https://twitter.com/intent/tweet?text=${encText}&url=${encUrl}" target="_blank">Share on X</a>
+            <a class="share-btn facebook" href="https://www.facebook.com/sharer/sharer.php?u=${encUrl}" target="_blank">Facebook</a>
+            <a class="share-btn linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=${encUrl}" target="_blank">LinkedIn</a>
+            <a class="share-btn whatsapp" href="https://api.whatsapp.com/send?text=${encText}%20${encUrl}" target="_blank">WhatsApp</a>
+            <button class="share-btn copy" onclick="navigator.clipboard.writeText('${shareText} ' + pageUrl);this.textContent='Copied!'">Copy</button>
+        `;
+
+        document.getElementById('share-section').style.display = 'block';
+    })();
+    </script>
+    
+<div class="powered-by">
+    Powered by <a href="https://studloans.com?utm_source=crowd_growth&utm_medium=powered_by&utm_campaign=widget">StudLoans</a>
+    &mdash; Free tools for everyone
+</div>
+<script>
+// UTM tracking for all outbound links
+document.querySelectorAll('a[href^="http"]').forEach(a => {
+    if (!a.href.includes('utm_')) {
+        const sep = a.href.includes('?') ? '&' : '?';
+        a.href += sep + 'utm_source=crowd_growth&utm_medium=shared_page';
+    }
+});
+</script>
+</body>
+</html>
