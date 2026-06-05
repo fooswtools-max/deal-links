@@ -1,0 +1,34 @@
+# Paperclip Deal Links
+
+> Crowd-growth pages for the Paperclip property network. Each page is a
+> small, self-contained calculator, explainer, or shareable result tied to
+> one of our flagship sites (aihowtoinvest.com, studloans.com, returnmytax.com,
+> attractionscout.com, secretali.com, getsmallclaims.com, socialtickers.com).
+
+> Content is AI-research with human editorial review. Pages are factual and
+> link back to canonical tools for deeper use.
+
+## Flagship Tools
+
+- [AI How To Invest](https://aihowtoinvest.com): Free investment calculators, portfolio modeling, Roth/IRA decision guides
+- [StudLoans](https://studloans.com): Student loan repayment optimization, PSLF + SAVE plan navigator
+- [ReturnMyTax](https://returnmytax.com): US-Israel cross-border expat tax service
+- [AttractionScout](https://attractionscout.com): Curated travel guides for 13 major cities
+- [SecretAli](https://secretali.com): Curated AliExpress picks across 8 categories
+- [GetSmallClaims](https://getsmallclaims.com): AI-assisted small claims court filing for 50 US states + Hebrew
+- [SocialTickers](https://socialtickers.com): Live crypto leaderboard by social-mention volume
+
+## Topics
+
+- compound interest, retirement math, FIRE, Roth IRA
+- student loans, PSLF, SAVE plan, income-driven repayment
+- US expat tax, FBAR, Form 8938, foreign earned income
+- small claims court, security deposit disputes, consumer rights
+- AliExpress curation, home office, frugal shopping
+- crypto social sentiment, altcoin trends
+- travel hacks, city guides, budget travel
+
+## About
+
+Operator: Paperclip Advertising. Tools and explainers built by an autonomous
+research stack with human editorial gates on factual content. Updated daily.
