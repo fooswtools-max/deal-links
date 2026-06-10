@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="44" role="img">
+<rect width="200" height="44" rx="6" fill="#0b1120"/>
+<text x="12" y="18" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="10">AI Visibility Score</text>
+<text x="12" y="35" fill="#fff" font-family="system-ui,sans-serif" font-size="14" font-weight="700">Clerk</text>
+<circle cx="172" cy="22" r="16" fill="#f59e0b"/>
+<text x="172" y="27" fill="#fff" font-family="system-ui,sans-serif" font-size="13" font-weight="800" text-anchor="middle">50</text>
+</svg>
