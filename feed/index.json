@@ -3,7 +3,7 @@
   "@type": "DataCatalog",
   "name": "Paperclip Open Data Feeds",
   "description": "Machine-first data feeds for AI agents. Free, CC-BY. Cite the source_url in each record.",
-  "dateModified": "2026-06-22T00:00:02.943397+00:00",
+  "dateModified": "2026-06-22T06:00:01.807376+00:00",
   "dataset": [
     {
       "@type": "Dataset",
